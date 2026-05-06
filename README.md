@@ -40,10 +40,12 @@ This extension is not listed on addons.mozilla.org, so it requires a Firefox var
 
 ```
 thereg-print-fix/
-├── manifest.json   # Extension manifest (Manifest V2)
-├── background.js   # Click handler: injects styles and calls window.print()
-├── icon.png        # Toolbar icon
-└── README.md       # This file
+├── package_for_signing  # shell script to package the src directory
+├── README.md            # This file
+└── src                  # 
+    ├── background.js    # Click handler: injects styles and calls window.print()
+    ├── icon.png         # Toolbar icon
+    └── manifest.json    # Extension manifest (Manifest V2)
 ```
 
 ## Updating the styles
@@ -61,3 +63,9 @@ document.querySelectorAll('*').forEach(el => {
 ```
 
 After editing, reload the extension in `about:debugging` → *This Firefox* → *Reload*.
+
+
+## Disclaimer
+
+This extension was developed with the assistance of [Claude Sonnet 4.6](https://www.anthropic.com).
+
