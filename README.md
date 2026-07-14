@@ -64,8 +64,51 @@ document.querySelectorAll('*').forEach(el => {
 
 After editing, reload the extension in `about:debugging` → *This Firefox* → *Reload*.
 
+## Sign a new version at Mozilla.org
+
+### Submit a new version at Mozilla.org for signing
+- set "version" in manifest.json
+- Run ./package_for_signing.sh
+- Increment "version" in manifest.json
+- Sign in to https://addons.mozilla.org
+- Go to https://addons.mozilla.org/en-US/developers/addons
+- Click "Submit a New Add-on", or 
+- Click on your Add-on > "Upload New Version"
+- Complete the steps
+
+### Install the signed Add-on
+- Go to https://addons.mozilla.org/en-US/developers/addons
+- Click on your Add-on > "View All" 
+- Click on latest version e.g. "Version 1.1"
+- Click on the .xpi entry, e.g. "3ec8953fab184d25ad08-1.1.xpi" to install
+- Right-click on the .xpi entry and choose "Save Links as .." to download
+
+
+## License
+
+MIT License
+
+Copyright (c) 2026 [Axel Busch]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 ## Disclaimer
 
-This extension was developed with the assistance of [Claude Sonnet 4.6](https://www.anthropic.com).
+This extension was developed with the assistance of [Claude Sonnet](https://www.anthropic.com).
 

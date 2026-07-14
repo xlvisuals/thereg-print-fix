@@ -61,6 +61,13 @@ browser.browserAction.onClicked.addListener((tab) => {
           }
         \`;
         document.head.appendChild(style);
+
+        // Removing the "bodytext" class entirely restores full width —
+        // simpler and more reliable than fighting its CSS.
+        document.querySelectorAll('.bodytext').forEach(el => {
+          el.classList.remove('bodytext');
+        });
+
         window.print();
       })();
     `

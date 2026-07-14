@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Print El Reg",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Fixes print styles on theregister.com and opens the print dialog.",
   "browser_specific_settings": {
     "gecko": {

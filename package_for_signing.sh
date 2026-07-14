@@ -8,3 +8,8 @@ cd "$(dirname "$(readlink -f "$0")")" || exit
 
 cd src
 zip -r ../thereg-print-fix.zip .
+
+cd ..
+mkdir build
+mv thereg-print-fix.zip build/
+
