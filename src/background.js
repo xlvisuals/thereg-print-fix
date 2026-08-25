@@ -55,6 +55,7 @@ browser.browserAction.onClicked.addListener((tab) => {
             [class*="articleList"], [class*="article-list"],
             [class*="moreContext"], [class*="more-context"],
             [class*="moreStories"], [class*="moreCont"],
+            [class*="toplist"], [class*="kicker"], 
             [class*="context"], [class*="recommended"] {
               display: none !important;
             }

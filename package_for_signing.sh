@@ -7,6 +7,7 @@ cd "$(dirname "$(readlink -f "$0")")" || exit
 # Mozilla's validator expects to find manifest.json at the top level.
 
 cd src
+rm -f .DS_Store
 zip -r ../thereg-print-fix.zip .
 
 cd ..
